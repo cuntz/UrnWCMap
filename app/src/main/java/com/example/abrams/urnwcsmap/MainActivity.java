@@ -12,12 +12,12 @@ import android.widget.TextView;
 
 public class MainActivity extends Activity {
 
-    public TextView editLogin;
+    public TextView editText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-        editLogin = (TextView) findViewById(R.id.textWorld);
+        editText = (TextView) findViewById(R.id.textWorld);
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
@@ -48,6 +48,6 @@ public class MainActivity extends Activity {
     }
 
     public void OnClick_HelloWorldView(View view) {
-        editLogin.setText("abc");
+        editText.setText("abc");
     }
 }
